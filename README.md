@@ -8,21 +8,22 @@ Library `opencv` is needed.
 
 #### Running the code
 
-To compile the code
-`cd build`
-`cmake ..`
-`make`
-To start the application GUI, run
-`./gradient_descent_viz`
-When the GUI is running:
+- To compile the code
+  `cd build`
+  `cmake ..`
+  `make`
 
-- press key `q` to quit the GUI. (The simulation is still running with printing to console. `CTRL+C` to stop the simulation)
+- To start the application GUI, run`./gradient_descent_viz`
 
-- press key `r` to reset the positions of balls randomly. 
+  - When the GUI is running:
+
+    - press key `q` to quit the GUI. (The simulation is still running with printing to console. `CTRL+C` to stop the simulation)
+
+    - press key `r` to reset the positions of balls randomly. 
 
 #### Code structure
-`src/Graphics.h/Graphics.cpp`: display landscape surface and balls position
-`src/Ball.h/Ball.cpp`: update the position of a ball by going along the gradient of landscape surface 
+- `src/Graphics.h/Graphics.cpp`: display landscape surface and balls position
+- `src/Ball.h/Ball.cpp`: update the position of a ball by going along the gradient of landscape surface 
 
 #### Rubric
 
