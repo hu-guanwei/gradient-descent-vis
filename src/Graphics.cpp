@@ -33,14 +33,14 @@ void Graphics::simulate(const char *windowName) {
         if (key == 'r') {
             // reset positions of balls
             for (auto &b: getBalls()) {
-                b->_i = distr(eng) % _height;
-                b->_j = distr(eng) % _width;
+                b->setI(distr(eng) % _height);
+                b->setJ(distr(eng) % _width);
             }
         }
         for (auto &b: getBalls()) {
             cv::circle(
                 landscapeNormalized, 
-                cv::Point(b->_j, b->_i), 10, 
+                cv::Point(b->getI(), b->getJ()), 10, 
                 cv::Scalar(255), -1, 
                 cv::LINE_8);
         }
