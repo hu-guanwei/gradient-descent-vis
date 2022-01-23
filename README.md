@@ -9,7 +9,7 @@ Library `opencv` is needed.
 #### Running the code
 
 - To compile the code
-  `cd build`
+  `mkdir build && cd build`
   `cmake ..`
   `make`
 
